@@ -13,11 +13,33 @@ The details on loaded module can be found at [olcf user doc](https://docs.olcf.o
 
 ## Connect to 
 
+### step 1: to login node
 ```
-# first step: to login node
-ssh -L8888:localhost:8000 -X -I /usr/local/lib/opensc-pkcs11.so fwang2@summit.olcf.ornl.gov
-# second step: to batch node (after node request granted)
-bsub -P STF008 -nnodes 1 -W 60 -alloc_flags gpumps -Is /bin/bash
-# 3rd step: onto compute node, echo $LSB_HOSTS will tell you the hostname
-ssh -L 8000:localhost:8887 b25n14
+ssh -X -I /usr/local/lib/opensc-pkcs11.so fwang2@summit.olcf.ornl.gov
+```
+
+### step 2: to batch node (after node request granted)
+```
+bsub -P STF008 -nnodes 1 -W 60 -alloc_flags nvme -Is /bin/bash
+```
+
+### step 3: to ~/distributed-learning-summit
+```
+jsrun -n1 -a1 -c42 -g6 -r1 ./jupyterlab/compute.sh 8887
+```
+
+The most important information after this is:
+
+```
+The Jupyter Notebook is running at
+http://h36n04:8887/
+```
+
+
+# final step:
+
+
+```
+ssh  -L9999:localhost:8000 -X -I /usr/local/lib/opensc-pkcs11.so fwang2@summit.olcf.ornl.gov
+ssh -L 8000:localhost:8887 b36n04
 ```

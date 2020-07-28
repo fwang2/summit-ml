@@ -7,8 +7,9 @@ This repository contains several study notes on Machine Learning.
 ## Deep Learning
 
 * [Neural Network Concept](DL/ANN-basics.ipynb)
-* [Gradient Descent, Take 1](DL/gradient_descent1.ipynb)
-* [Gradient Descent, Take 2](DL/gradient_descent2.ipynb)
+* [2-Layer Gradient Descent](DL/gradient_descent1.ipynb)
+* [3-Layer Gradient Descent](DL/gradient_descent2.ipynb)
+* [Regularization and dropout](DL/regularization.ipynb)
   
 ## Scalable Learning
 

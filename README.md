@@ -13,6 +13,7 @@ This repository contains several study notes on Machine Learning.
 
 ## Deep Learning
 * [Gradient Descent](DL/gd-general.ipynb)
+* [Compute Graph, Back Propagation](DL/autograd.ipynb)
 * [Neural Network Concept](DL/ANN-basics.ipynb)
 * [2-Layer Gradient Descent](DL/gd_2_layer.ipynb)
 * [3-Layer Gradient Descent](DL/gd_3_layer.ipynb)

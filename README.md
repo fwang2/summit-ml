@@ -13,6 +13,7 @@ This repository contains several study notes on Machine Learning.
 
 * [Linear Regression](Regression/Linear-Regression.ipynb)
 * [Linear Regression using PyTorch](Regression/regressiion-pytorch.ipynb)
+* [Logistic Regression using PyTorch](Regression/logistic-pytorch.ipynb)
 
 ## Clustering
 

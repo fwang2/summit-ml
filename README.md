@@ -9,6 +9,11 @@ This repository contains several study notes on Machine Learning.
     pip install -U \
         tensorflow keras scikit-learn matplotlib \
 
+## Regression
+
+* [Linear Regression](Regression/Linear-Regression.ipynb)
+* [Linear Regression using PyTorch](Regression/regressiion-pytorch.ipynb)
+
 ## Clustering
 
 ## Deep Learning
